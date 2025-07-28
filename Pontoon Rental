@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>G&V Rentals | Pontoon Boat</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+    }
+    header {
+      background-color: #222;
+      color: #fff;
+      text-align: center;
+      padding: 1rem 0;
+    }
+    main {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+      background-color: #fff;
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    h2 {
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 0.5rem;
+    }
+    form input, form select, form textarea {
+      display: block;
+      width: 100%;
+      margin-bottom: 1rem;
+      padding: 0.5rem;
+    }
+    .placeholder-image {
+      width: 100%;
+      height: 200px;
+      background-color: #ddd;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #777;
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+    video {
+      width: 100%;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>G&V Rentals</h1>
+    <p>28ft Pontoon Boat Rentals in McMinnville & Smithville, TN</p>
+  </header>
+  <main>
+    <section>
+      <h2>Rental Options</h2>
+      <p><strong>$500</strong> - No Captain</p>
+      <p><strong>$600</strong> - With Captain/Driver</p>
+    </section>
+
+    <section>
+      <h2>Boat Preview</h2>
+      <div class="placeholder-image">Pontoon Boat Image Placeholder</div>
+    </section>
+
+    <section>
+      <h2>Booking & Agreements</h2>
+      <form>
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName" name="fullName" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="driverOption">Select Rental Type</label>
+        <select id="driverOption" name="driverOption">
+          <option value="noCaptain">No Captain ($500)</option>
+          <option value="withCaptain">With Captain ($600)</option>
+        </select>
+
+        <label for="experience">Years of Boating Experience (if no captain)</label>
+        <input type="number" id="experience" name="experience" min="0">
+
+        <label for="licenseUpload">Upload Driver's License</label>
+        <input type="file" id="licenseUpload" name="licenseUpload">
+
+        <label for="boatLicenseUpload">Upload Boating License</label>
+        <input type="file" id="boatLicenseUpload" name="boatLicenseUpload">
+
+        <label for="liabilityForm">Liability Form (placeholder)</label>
+        <textarea id="liabilityForm" placeholder="Liability form content will be added later..." rows="4" readonly></textarea>
+
+        <label for="termsForm">Agreement Terms (placeholder)</label>
+        <textarea id="termsForm" placeholder="Rental agreement terms will be added later..." rows="4" readonly></textarea>
+
+        <button type="submit">Submit Booking Request</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Training Videos</h2>
+      <p>Watch these videos to learn how to drive the boat:</p>
+      <video controls>
+        <source src="placeholder-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="placeholder-image">Additional Video Placeholder</div>
+    </section>
+  </main>
+</body>
+</html>
